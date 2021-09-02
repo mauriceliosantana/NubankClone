@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Barra de navegação */
+header {
+    width: 100%;
+    height: 60px;
+    padding: 0 48px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    width: 56px;
+    height: 56px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 140px;
+}
+
+header ul li {
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.login {
+    width: 90px;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login a {
+    text-decoration: none;
+    color: #820AD1;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.login i {
+    color: #820AD1;
+    font-size: 1.5rem;
+}
+/* Barra de navegação */
+
+/* Tela principal */
+main {
+    width: 100%;
+    height: 600px;
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.mensage {
+    width: 400px;
+    height: 500px;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+.mensage h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.mensage p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.entrada {
+    width: 330px;
+    height: 300px;
+    margin-left: 28%;
+    margin-top: 40px;
+}
+
+form {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form h2 {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+form input {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 40px;
+    outline: none;
+    transition: 200ms ease;
+}
+
+form button {
+    background-color: #820AD1;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 600ms ease;
+}
+
+form button span {
+    float: left;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+form button i {
+    float: right;
+    margin-right: 12px;
+}
+
+form button:hover {
+    background-color: #9509f3;
+}
+/* Tela principal */
+
+/* Descrição 1 */
+section {
+    width: 100%;
+    height: 540px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.um > .imagem img {
+    width: 420px;
+    height: 270px;
+    margin-top: 20px;
+}
+
+.um > .texto, .dois > .texto, .tres > .texto {
+    width: 460px;
+    height: 170px;
+    margin-bottom: 140px;
+}
+
+.um > .texto h1 {
+    font-size: 42px;
+    line-height: 3rem;
+}
+
+.um > .texto p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.um > .texto a {
+    text-decoration: none;
+    color: #820AD1;
+    font-weight: bold;
+}
+
+.um > .texto a:hover {
+    border-bottom: 2px solid #820AD1;
+    transition: 300ms ease;
+}
+/* Descrição 1 */
+
+/* Descrição 2 */
+.dois {
+    background-color: rgb(226, 226, 226);
+}
+
+.dois > .texto a {
+    text-decoration: none;
+    color: #820AD1;
+    font-weight: bold;
+}
+
+.titulo {
+    font-size: 42px;
+}
+
+.titulo:hover {
+    border-bottom: 4px solid #820AD1;
+}
+
+.dois > .texto p {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+.externo {
+    font-size: 18px;
+}
+
+.externo:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #820AD1;
+}
+
+.dois > .imagem img {
+    width: 284px;
+    height: 479px;
+}
+/* Descrição 2 */
+
+/* Descrição 3 */
+.tres > .texto a {
+    text-decoration: none;
+    color: #820AD1;
+    font-weight: bold;
+}
+
+.tres > .texto p {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+.tres > .imagem img {
+    width: 380px;
+    height: 300px;
+}
+/* Descrição 3 */
+
+/* Seções */
+article {
+    width: 100%;
+    height: 540px;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.secao-content {
+    width: 640px;
+    height: 400px;
+    margin-right: 100px;
+    padding: 64px;
+}
+
+.secao-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.secao-content a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.secao-content a:hover {
+    border-bottom: 2px solid white;
+}
+
+.one {
+    background-image: url('img/secao1.webp');
+}
+
+.two {
+    background-image: url('img/secao2.webp');
+}
+
+.three {
+    background-image: url('img/secao3.webp');
+}
+
+.one, .two, .three {
+    background-size: cover;
+}
+/* Seções */
+
+/* Lista de links do Nubank */
+.navigation {
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    padding: 80px 56px;
+}
+
+.organize {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.coluna {
+    width: 575px;
+    height: 320px;
+}
+
+.coluna p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.coluna p:last-child {
+    font-size: 16px;
+}
+
+.coluna a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.coluna a:hover {
+    color: rgb(130, 10, 209)
+}
+
+.coluna img {
+    width: 150px;
+    height: 56px;
+}
+/* Lista de links do Nubank */
+
+/* Redes Sociais */
+.wraper {
+    width: 100%;
+    height: 210px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    padding: 56px 80px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.wraper p {
+    float: left;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: rgb(245, 245, 245);
+}
+
+.linkage {
+    float: right;
+}
+
+.linkage a {
+    color: rgb(245, 245, 245);
+    font-size: 1.5rem;
+    margin: 0 15px;
+}
+
+.linkage a i {
+    cursor: pointer;
+}
+
+.linkage a i:hover {
+    color: #820AD1;
+}
+/* Redes Sociais */
+
+/* Rodapé */
+footer {
+    width: 100%;
+    height: 160px;
+    padding: 40px 56px;
+    background-color: rgb(25, 25, 25);
+}
+
+
+.ajuste {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ajuste a {
+    width: 120px;
+    height: 84px;
+    padding-bottom: 64px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ajuste a:last-child {
+    margin-left: 40px;
+}
+
+.ajuste a:hover {
+    color: #820AD1;
+}
+
+.ajuste input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ajuste input[type='checkbox']::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
+.ajuste input:checked[type='checkbox']::before {
+    display: block;
+}
+
+/* Rodapé */
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+        height: 900px;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mensage {
+        width: 100%;
+        max-width: 800px;
+        height: 50%;
+        text-align: left;
+        margin-left: 26px;
+        margin-top: 160px;
+        margin-bottom: -140px;
+    }
+
+    .entrada {
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    
+    form {
+        width: 330px;
+        height: 300px;
+        float: right;
+        margin-right: 20px;
+    }
+
+    .um {
+        display: inline-block;
+        text-align: center;
+        height: auto;
+    }
+
+    .um .imagem {
+        width: 100%;
+    }
+
+    .um > .texto {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .um > .texto h1, .um > .texto p {
+        width: 480px;
+        height: 150px;
+    }
+
+    .dois > .imagem, .dois > .texto, .tres > .imagem, .tres > .texto {
+        width: 50%;
+        text-align: center;
+    }
+
+    .dois > .texto, .tres > .texto {
+        text-align: left;
+    }
+
+    .tres { /*Alterar depois */
+        height: 800px;
+        margin-top: 0;
+    }
+
+    .wraper {
+        height: 280px;
+        padding: 40px 80px;
+    }
+
+    .linkage {
+        float: left;
+        margin-top: 48px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        height: 900px;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mensage {
+        width: 100%;
+        max-width: 400px;
+        text-align: left;
+        padding-top: 200px;
+        margin-left: 20px;
+    }
+
+    .mensage h1 {
+        font-size: 26px;
+    }
+    
+    .mensage p {
+        font-size: 18px;
+    }
+
+    .entrada {
+        width: 100%;
+        margin: 0 auto; /* Essa margin tirou a scrollbar de baixo causada por essa div */
+    }
+    
+    form {
+        width: 330px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    section {
+        display: inline-block;
+        text-align: center;
+        height: auto;
+    }
+
+    .um .imagem, .dois .imagem, .tres .imagem {
+        width: 100%;
+    }
+
+    .um .imagem img {
+        width: 320px;
+        height: 200px;
+    }
+
+    .um > .texto, .dois > .texto, .tres > .texto {
+        width: 100%;
+        text-align: left;
+        margin-left:  -32px;
+    }
+    
+    .um > .texto h1 {
+        font-size: 24px;
+        line-height: 2rem;
+        margin-top: 60px;
+    }
+    
+    .um > .texto p {
+        font-size: 18px;
+        margin: 28px 0;
+    }
+    
+    .titulo {
+        font-size: 24px;
+    }
+    
+    .dois > .texto p, .tres > .texto p {
+        font-size: 24px;
+        line-height: 2rem;
+        margin-bottom: 44px;
+    }
+
+    .dois .imagem img {
+        width: 290px;
+        height: 460px;
+    }
+
+    .externo {
+        font-size: 18px;
+    }
+
+    .secao {
+        display: block;
+        padding-top: 75px;
+        padding-left: 22px;
+    }
+
+    .one, .two, .three {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .three {
+        background-position: right;
+    }
+
+    .secao-content {
+        width: 400px;
+        height: 170px;
+    }
+
+    .secao-content h2 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .navigation {
+        height: 2560px;
+    }
+
+    .organize {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coluna {
+        width: 100%;
+        max-width: 575px;
+        min-height: 320px;
+    }
+
+    .coluna a {
+        margin-bottom: 20px;
+    }
+
+    .wraper {
+        display: flex;
+        flex-direction: column;
+        padding: 56px 25px;
+    }
+
+    .wraper p {
+        font-size: 18px;
+        margin-bottom: 40px;
+        padding-right: 25px;
+    }
+
+    .footer {
+        height: 320px;
+        padding: 25px;
+    }
+    
+    .ajuste {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .ajuste a {
+        margin-top: 130px;
+    }
+}
